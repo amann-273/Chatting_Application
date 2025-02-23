@@ -16,6 +16,25 @@ public class Server extends JFrame // JFrame is used for creating our frame
         
         // used to perform actions on the frame, a way to arrange and structure UI elements 
         JPanel p1 = new JPanel();
+        p1.setBackground(new Color(7,94,84)); // setting the background colour of the panel  
+        
+        // add() function will not show any results as setlayout is null
+        // this function helps us to place the panel or any componets as per our choice 
+        p1.setBounds(0, 0, 450, 70); // setBounds(int x, int y, int width, int height) where x & y are top left corners
+        p1.setLayout(null); // our image in this panel has not picked the setBounds location becase the layout was not null, it will work correctly
+        // using this function we can add components on the frame
+        add(p1); //addng the panel on the frame
+        
+        // class from swing package helps in handling images like setting 
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/3.png")); // method to recieve a resourrce omage from the path defined
+        
+        // class from swing package 
+        Image i2 = i1.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT); // getImage() -> extracts image from the 
+        
+        // image icon cannot be diectly set on the frame so JLabel will be used
+        JLabel back = new JLabel(i1); // passing the image in the object argument to load image in JLabel
+        back.setBounds(5,20, 25, 25); // setting loation of the back icon image
+        p1.add(back); // this will add the back icon image on the panel if we would have done only "add(back)" it would have been added to the frame not the panel 
         
         
         // present inside JFrame class and is used to set the size of the frame
@@ -31,7 +50,7 @@ public class Server extends JFrame // JFrame is used for creating our frame
         setVisible(true); // keeping it last so that frame is available only after all the changes are made
     }
     
-    public static void main (String args[]) // main method called immediately after running the class
+    public static void main (String args[]) // main method is called immediately after running the class
     {
         
         // anpnymous object which will call the constructor which contains our frame coding
