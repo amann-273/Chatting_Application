@@ -1,5 +1,5 @@
 // intructing our JVM that this class Server comes under the package of chatting
-package chatting.applicarion;  
+package chatting.applicarion;
 
 // swing package from javax contains the JFrame class
 import javax.swing.*;
