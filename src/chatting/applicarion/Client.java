@@ -179,7 +179,9 @@ public class Client implements ActionListener {
                 
                 f.validate();
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) 
+        {
             e.printStackTrace();
         }
     }
