@@ -15,15 +15,11 @@ public class Client implements ActionListener
     JTextField text;
     static JPanel a1;
     static Box vertical = Box.createVerticalBox();
-    
     static JFrame f = new JFrame();
-    
     static DataOutputStream dout;
-    
-    Client() {
-        
-        f.setLayout(null);
-        
+    Client()
+    {    
+        f.setLayout(null);   
         JPanel p1 = new JPanel();
         p1.setBackground(new Color(7, 94, 84));
         p1.setBounds(0, 0, 450, 70);
