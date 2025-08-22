@@ -33,8 +33,10 @@ public class Client implements ActionListener
         back.setBounds(5, 20, 25, 25);
         p1.add(back);
         
-        back.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent ae) {
+        back.addMouseListener(new MouseAdapter() 
+        {
+            public void mouseClicked(MouseEvent ae) 
+            {
                 System.exit(0);
             }
         });
