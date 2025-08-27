@@ -108,7 +108,8 @@ public class Client implements ActionListener
     
     public void actionPerformed(ActionEvent ae)
     {
-        try {
+        try
+        {    
             String out = text.getText();
 
             JPanel p2 = formatLabel(out);
