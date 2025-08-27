@@ -106,7 +106,8 @@ public class Client implements ActionListener
         f.setVisible(true);
     }
     
-    public void actionPerformed(ActionEvent ae) {
+    public void actionPerformed(ActionEvent ae)
+    {
         try {
             String out = text.getText();
 
