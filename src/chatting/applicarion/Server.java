@@ -9,7 +9,8 @@ import java.text.*;
 import java.net.*;
 import java.io.*;
 
-public class Server implements ActionListener {
+public class Server implements ActionListener 
+{
     
     JTextField text;
     JPanel a1;
