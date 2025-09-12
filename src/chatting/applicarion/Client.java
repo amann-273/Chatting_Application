@@ -166,7 +166,8 @@ public class Client implements ActionListener
             DataInputStream din = new DataInputStream(s.getInputStream());
             dout = new DataOutputStream(s.getOutputStream());
             
-            while(true) {
+            while(true)
+            {
                 a1.setLayout(new BorderLayout());
                 String msg = din.readUTF();
                 JPanel panel = formatLabel(msg);
