@@ -18,7 +18,8 @@ public class Server implements ActionListener
     static JFrame f = new JFrame();
     static DataOutputStream dout;
     
-    Server() {
+    Server() 
+    {
         
         f.setLayout(null);
         
