@@ -129,7 +129,9 @@ public class Client implements ActionListener
             f.repaint();
             f.invalidate();
             f.validate();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             e.printStackTrace();
         }
     }
