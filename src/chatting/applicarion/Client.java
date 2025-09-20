@@ -136,7 +136,8 @@ public class Client implements ActionListener
         }
     }
     
-    public static JPanel formatLabel(String out) {
+    public static JPanel formatLabel(String out) 
+    {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         
